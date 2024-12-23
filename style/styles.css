@@ -642,6 +642,10 @@ a {
   margin-bottom: 15px;
 }
 
+.ps_second{
+  margin-bottom: 120px;
+}
+
 .product_slider .products {
   display: flex;
   overflow-x: auto;
