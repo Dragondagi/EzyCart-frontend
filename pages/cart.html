@@ -10,6 +10,20 @@
     />
     <link rel="stylesheet" href="../style/styles.css" />
     <title>Cart</title>
+    <style>
+      .footer-wrapper{
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+      }
+      .container{
+        padding:  0;
+      }
+    </style>
   </head>
   <body>
     <!-- Header section starts -->
@@ -68,22 +82,24 @@
     </header>
     <!-- Header section ends -->
 
-    <div class="purchased_product_title">
-      <h1>Purchased Products</h1>
-    </div>
-    <br />
-
-    <div class="products_container listCard">
-      <!-- cart items(purchased products list) -->
-    </div>
-
-    <div class="checkout">
-      <div class="total">0</div>
-    </div>
-
-    <div class="clear_cart_button">
-      <button id="clearCart">Clear Cart</button>
-    </div>
+    <article class="cart_article">
+      <div class="purchased_product_title">
+        <h1>Purchased Products</h1>
+      </div>
+      <br />
+  
+      <div class="products_container listCard">
+        <!-- cart items(purchased products list) -->
+      </div>
+  
+      <div class="checkout">
+        <div class="total">0</div>
+      </div>
+  
+      <div class="clear_cart_button">
+        <button id="clearCart">Clear Cart</button>
+      </div>
+    </article>
 
     <div class="form">
       <form action="#" method="#">
