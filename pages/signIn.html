@@ -1,58 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="shortcut icon" href="../Resources/icons-and-logo/E-logo-correct.webp" type="image/x-icon">
-    <link rel="stylesheet" href="../style/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../Resources/icons-and-logo/E-logo-correct.webp"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../style/styles.css" />
     <title>sign-in</title>
-</head>
-<body>
+    <style>
+      .signin-section {
+        margin-top: 65px;
+      }
+      .footer-wrapper{
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+      }
+      .container{
+        padding:  0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header section starts -->
+    <header>
+      <nav class="header_container">
+        <div class="logo_container">
+          <a href="../index.html">
+            <img
+              src="../Resources/icons-and-logo/EzyCart-originall-logo.jpg"
+              alt="amazon logo"
+            />
+          </a>
+        </div>
+        <div class="search">
+          <select name="" id="">
+            <option value="">All</option>
+            <option value="">Electronics</option>
+            <option value="">Men's Cloths</option>
+            <option value="">Women's Cloths</option>
+            <option value="">Jewelry</option>
+            <option value="">Cars</option>
+            <option value="">Kitchen Products</option>
+            <option value="">Beauty Products</option>
+            <option value="">Toy Items</option>
+          </select>
+          <input type="text" placeholder="search product" />
+          <img src="../Resources/icons-and-logo/searchIcon.png" alt="" />
+        </div>
 
-    <section>
-
-       <a href="../index.html">
-           <div class="singIn_logo_wrapper">
-               <img src="../Resources/icons-and-logo/EzyCart-originall-logo.jpg" alt="">
-           </div>
-       </a>
-        <div class="singIn_card">
-            <h1>Sing in</h1>
-            <div class="signIn_form">
-                <form action="#" method="#">
-                    <label for="email">Email or mobile phone</label>
-                    <input type="text">
-                    <button  type="submit">
-                        Continue
-                    </button>
-                </form>
+        <div class="order_container">
+          <div class="delivery">
+            <span>
+              <img
+                class="location"
+                src="../Resources/icons-and-logo/locationIcon.png"
+                alt="loc"
+              />
+            </span>
+            <div>
+              <p>Deliver to</p>
+              <span>Ethiopia</span>
             </div>
-            <p>By continuing, you agree to EzyCart's <a href="./termsOfUse.html">Conditions of Use</a> and <a href="./privacyPolicy.html">Privacy Notice</a></p>
-        </div>
+          </div>
 
-        <div class="break">
+          <a href="../pages/signIn.html">
+            <div>
+              <h4>Sign In</h4>
+            </div>
+          </a>
+          <a href="../pages/signUp.html">
+            <div>
+              <h4>Sign Up</h4>
+            </div>
+          </a>
 
-            <p>Don't have an account?</p>
+          <a href="./cart.html">
+            <div class="count_cart">
+              <span class="count">0</span>
+              <img
+                class="cart"
+                src="../Resources/icons-and-logo/cart-icon-svg111.svg"
+                alt="cart-icon"
+              />
+            </div>
+          </a>
         </div>
-        <div class="btn">
-            <a href="./signUp.html">
-                <button>
-                    Create your EzyCart account
-                </button>
-            </a>
+      </nav>
+    </header>
+    <!-- Header section ends -->
+    <section class="signin-section">
+      <a href="../index.html">
+        <div class="singIn_logo_wrapper">
+          <img
+            src="../Resources/icons-and-logo/EzyCart-originall-logo.jpg"
+            alt=""
+          />
         </div>
-        <br>
+      </a>
+      <div class="singIn_card">
+        <h1>Sign in</h1>
+        <div class="signIn_form">
+          <form action="#" method="#">
+            <label for="email">Email or mobile phone</label>
+            <input type="text" />
+            <button type="submit">Continue</button>
+          </form>
+        </div>
+        <p>
+          By continuing, you agree to EzyCart's
+          <a href="./termsOfUse.html">Conditions of Use</a> and
+          <a href="./privacyPolicy.html">Privacy Notice.</a>
+        </p>
+      </div>
 
+      <div class="break">
+        <p>Don't have an account?</p>
+      </div>
+      <div class="btn">
+        <a href="./signUp.html">
+          <button>Create your EzyCart account</button>
+        </a>
+      </div>
+      <br />
     </section>
-
-        <div class="signIn_footer">
-            <div class="signIn_footer_links">
-                <a href="./termsOfUse.html">Conditions of Use</a>
-                <a href="./privacyPolicy.html">Privacy Notice</a>
-                <a href="./aboutUs.html">About</a>
-            </div>
-            <p>&copy;2024, EzyCart.com</p>
+<!-- 
+    <footer class="signIn_footer">
+      <div class="signIn_footer_links">
+        <a href="./termsOfUse.html">Conditions of Use</a>
+        <a href="./privacyPolicy.html">Privacy Notice</a>
+        <a href="./aboutUs.html">About</a>
+      </div>
+      <p>&copy;2024, EzyCart.com</p>
+    </footer> -->
+  <!-- footer section starts -->
+    <footer class="footer-wrapper">
+      <div class="container">
+            <h1>Company</h1>
+            <br>
+            <ul>
+              <li><a href="../pages/aboutUs.html">About Us</a></li>
+              <li><a href="../pages/privacyPolicy.html">Privacy Policy</a></li>
+              <li><a href="../pages/termsOfUse.html">Terms of Use</a></li>
+            </ul>
         </div>
-    
-</body>
+
+        <div class="copyright-wrapper">
+            Copyright &copy; 2024 EzyCart. All rights reserved.
+            <div class="flag-wrapper">
+              <img src="../Resources/icons-and-logo/ethiopianFlagIcon.png" />
+            </div>
+            <div class="footer-country-name">Ethiopia.</div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer section ends -->
+    <script src="../script/toys.js"></script>
+  </body>
 </html>
